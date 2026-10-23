@@ -36,7 +36,7 @@ By enforcing parameterized queries (Prepared Statements) and Object-Relational M
 | **ISO/IEC 27001:2022** | **Annex A.8.28** (Secure Coding) | Mandates secure coding practices to eliminate injection flaws during database query construction. |
 | **ISO/IEC 27001:2022** | **Annex A.8.8** (Management of Technical Vulnerabilities) | Establishes immediate patching and lifecycle workflows for critical system vulnerabilities. |
 | **NIST CSF v2.0** | **PR.DS-01** (Data Security) | Enforces protective mechanisms to safeguard database confidentiality, integrity, and access controls. |
-| **NIST CSF v2.0** | **DE.CM-01** (Continuous Monitoring) | Requires continuous monitoring of database logs for anomalous query syntax patterns. |
+| **NIST CSF v2.0** | **PR.PS-01** (Software Security) | Mandates secure software development practices and automated security testing in deployment pipelines. |
 
 ---
 
@@ -119,7 +119,7 @@ Mandatory static code analysis tools (e.g., SonarQube, Semgrep, or ESLint Securi
 
 #### 2. GitHub Actions Security Pipeline Configuration
 
-The following automated pipeline workflow file must be placed in `.github/workflows/security-sast.yml`:
+The following is the standard automated pipeline configuration template implemented for secure CI/CD enforcement:
 
 ```yaml
 name: Security Scan - SAST Pipeline
